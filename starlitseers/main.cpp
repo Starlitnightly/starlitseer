@@ -47,15 +47,6 @@ int main(int argc, char *argv[])
 {
     //raisePrivilege();
     QApplication a(argc, argv);
-    QFileInfo file(QDir::currentPath()+"\\imageformats\\key.u");
-    QFile file1(QDir::currentPath()+"\\imageformats\\key.u");
-    if(file.exists()==false)
-    {
-        return 0;
-    }else
-    {
-        file1.remove();
-    }
     MainWindow w;
     w.show();
 
